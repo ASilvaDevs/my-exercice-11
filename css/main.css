@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #EEEEEE;
+}
+
+.container{
+    width: 1366px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #3868D6;
+    padding: 12px 0;
+}
+
+header h1{
+    color: white;
+    font-style: italic;
+}
+
+header > .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li{
+    display: inline;
+    list-style-type: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-left: 18px;
+}
+
+#about-the-store{
+    margin: 32px 0;
+}
+
+.about-store{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.about-store img{
+    width: 90%;
+}
+
+.about-store-content h2{
+    font-style: italic;
+    color: #3868D6;;
+    padding: 10px 0;
+    border-bottom: 3px #3868D6 solid;
+    margin-bottom: 42px;
+}
+
+.about-store-content h2{
+    font-style: italic;
+    color: #3868D6;;
+    padding: 10px 0;
+    border-bottom: 3px #3868D6 solid;
+    margin-bottom: 42px;
+}
+
+.products-title {
+    font-style: italic;
+    color: #3868D6;;
+    padding: 10px 0;
+    border-bottom: 3px #3868D6 solid;
+    margin-bottom: 42px;
+}
+.products-article{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.products-content{
+    margin-right: 14px;
+    width: 80%;
+}
+
+.products-content img {
+    width: 80%;
+}
+
+
+.products-content h2 {
+    margin: 16px 0;
+}
+
+.products-content p {
+    font-size: 1fr;
+}
+
+.products-content button{
+    background-color: #3868D6 ;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 16px 0;
+    padding: 8px;
+    border: none;
+    width: 100%;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px){
+    .container{
+        width: 671px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .about-store{
+        display: block;
+    }
+
+    .about-store h2{
+        margin: 12px 0;
+    }
+
+    .products-article{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+
+}
+
+@media screen and (max-width: 640px){
+    .container{
+        width: 640px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .about-store{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-store h2{
+        margin: 12px 0;
+    }
+
+    .products-article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+}
